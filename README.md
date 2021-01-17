@@ -29,12 +29,12 @@ This Docker image intends to bring the awesomeness of [`pokemonsay`](https://git
 
 You can use this with plain Docker:
 
-    $ docker run --rm otherguy/pokemonsay -p Pikachu "You really should use pokemonsay with whalebrew. It will bring Pokemon to your workflow!"
+    $ docker run --rm otherguy/pokemonsay -p Pikachu "Pokemonsay brings Pokemon to your workflow!"
 
 Or you can install it using [whalebrew](https://github.com/whalebrew/whalebrew) and use it simply with `pokemonsay`:
 
     $ whalebrew install otherguy/pokemonsay
-    $ pokemonsay -p Pikachu "You really should use pokemonsay with whalebrew. It will bring Pokemon to your workflow!"
+    $ pokemonsay -p Pikachu "You really should use pokemonsay with whalebrew."
 
 ## 🚧 Contributing
 
