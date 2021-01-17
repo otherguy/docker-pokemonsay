@@ -21,7 +21,7 @@ _This repository provides the [`otherguy/pokemonsay`][dockerhub] image_
 
 ## 🌈 What is this?
 
-[`pokemonsay`](https://github.com/possatti/pokemonsay) is like [`cowsay`][https://en.wikipedia.org/wiki/Cowsay] but for Pokémon only, written by [Lucas Possatti](https://github.com/possatti/).
+[`pokemonsay`](https://github.com/possatti/pokemonsay) is like [`cowsay`](https://en.wikipedia.org/wiki/Cowsay) but for Pokémon only, written by [Lucas Possatti](https://github.com/possatti/).
 
 This Docker image intends to bring the awesomeness of [`pokemonsay`](https://github.com/possatti/pokemonsay) to Docker and especially [whalebrew](https://github.com/whalebrew/whalebrew).
 
