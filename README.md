@@ -25,7 +25,7 @@ _This repository provides the [`otherguy/pokemonsay`][dockerhub] image_
 
 This Docker image intends to bring the awesomeness of [`pokemonsay`](https://github.com/possatti/pokemonsay) to Docker and especially [whalebrew](https://github.com/whalebrew/whalebrew).
 
-## 💾 Installation
+## 🛠 Usage
 
 You can use this with plain Docker:
 
