@@ -11,12 +11,12 @@ before_deploy:
 
 deploy:
   - provider: script
-    script: docker push otherguy/pokemonsay:latest && docker tag otherguy/pokemonsay:latest docker.pkg.github.com/otherguy/docker-pokemonsay/pokemonsay:latest && docker push docker.pkg.github.com/otherguy/docker-dropbox/dropbox:latest
+    script: docker push otherguy/pokemonsay:latest && docker tag otherguy/pokemonsay:latest docker.pkg.github.com/otherguy/docker-pokemonsay/pokemonsay:latest && docker push docker.pkg.github.com/otherguy/docker-pokemonsay/pokemonsay:latest
     on:
       branch: master
 
   - provider: script
-    script: docker tag otherguy/pokemonsay:latest otherguy/pokemonsay:${TRAVIS_TAG} && docker push otherguy/pokemonsay:${TRAVIS_TAG} && docker tag otherguy/dropbox:latest docker.pkg.github.com/otherguy/docker-dropbox/dropbox:${TRAVIS_TAG} && docker push docker.pkg.github.com/otherguy/docker-pokemonsay/pokemonsay:${TRAVIS_TAG}
+    script: docker tag otherguy/pokemonsay:latest otherguy/pokemonsay:${TRAVIS_TAG} && docker push otherguy/pokemonsay:${TRAVIS_TAG} && docker tag otherguy/pokemonsay:latest docker.pkg.github.com/otherguy/docker-pokemonsay/pokemonsay:${TRAVIS_TAG} && docker push docker.pkg.github.com/otherguy/docker-pokemonsay/pokemonsay:${TRAVIS_TAG}
     on:
       tags: true
 
