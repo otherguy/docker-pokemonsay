@@ -25,6 +25,17 @@ _This repository provides the [`otherguy/pokemonsay`][dockerhub] image_
 
 This Docker image intends to bring the awesomeness of [`pokemonsay`](https://github.com/possatti/pokemonsay) to Docker and especially [whalebrew](https://github.com/whalebrew/whalebrew).
 
+## 💾 Installation
+
+You can use this with plain Docker:
+
+  $ docker run --rm otherguy/pokemonsay -p Pikachu "You really should use pokemonsay with whalebrew. It will bring Pokemon to your workflow!"
+
+Or you can install it using [whalebrew](https://github.com/whalebrew/whalebrew) and use it simply with `pokemonsay`:
+
+  $ whalebrew install otherguy/pokemonsay
+  $ pokemonsay -p Pikachu "You really should use pokemonsay with whalebrew. It will bring Pokemon to your workflow!"
+
 ## 🚧 Contributing
 
 Bug reports and pull requests are welcome on GitHub at [`otherguy/docker-pokemonsay`](https://github.com/otherguy/docker-pokemonsay).

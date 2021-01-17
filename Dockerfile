@@ -41,7 +41,7 @@ LABEL org.label-schema.build-date     = "${BUILD_DATE}"
 LABEL org.label-schema.vcs-ref        = "${VCS_REF}"
 
 LABEL io.whalebrew.name                       = 'pokemonsay'
-LABEL io.whalebrew.config.environment         = '["TERM", "LANG", "COLORTERM"]'
+LABEL io.whalebrew.config.environment         = '["TERM"]'
 LABEL io.whalebrew.config.keep_container_user = 'false'
 
 ENTRYPOINT ["/usr/games/pokemonsay"]
