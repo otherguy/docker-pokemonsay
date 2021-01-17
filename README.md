@@ -42,7 +42,8 @@ Bug reports and pull requests are welcome on GitHub at [`otherguy/docker-pokemon
 
 ## ♥️ Acknowledgements
 
-- [Lucas Possatti](https://github.com/possatti/) for creating
+- [Lucas Possatti](https://github.com/possatti/) for creating [`pokemonsay`](https://github.com/possatti/pokemonsay)
+
 ## 📝 Legal
 
 All Pokémon rights are property of [The Pokémon Company](https://en.wikipedia.org/wiki/The_Pok%C3%A9mon_Company). This is a  fan project with no ties to The Pokémon Company.
