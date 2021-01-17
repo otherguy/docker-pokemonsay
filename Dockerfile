@@ -1,8 +1,5 @@
 FROM perl:5.28-slim
 
-# Maintainer
-LABEL maintainer="otherguy <hi@otherguy.io>"
-
 # Required to prevent warnings
 ARG DEBIAN_FRONTEND=noninteractive
 ARG DEBCONF_NONINTERACTIVE_SEEN=true
@@ -15,9 +12,7 @@ RUN apt-get update \
        ca-certificates git openssl cowsay \
   && git clone git://github.com/possatti/pokemonsay \
   && cd pokemonsay \
-  && git checkout unicode \
   && sh install.sh \
-  && mv /root/bin/pokemon* /usr/games \
   && apt-get purge -y \
        ca-certificates git openssl \
   && rm -rf /var/lib/apt/lists/*
@@ -31,17 +26,20 @@ ARG BUILD_DATE=""
 ARG VERSION="${VCS_REF}"
 
 # http://label-schema.org/rc1/
-LABEL org.label-schema.schema-version = "1.0"
-LABEL org.label-schema.name           = "pokemonsay"
-LABEL org.label-schema.version        = "1.0"
-LABEL org.label-schema.description    = "`pokemonsay` is is like `cowsay` but for pokémon."
-LABEL org.label-schema.vcs-url        = "https://github.com/otherguy/docker-pokemonsay"
-LABEL org.label-schema.version        = "${VERSION}"
-LABEL org.label-schema.build-date     = "${BUILD_DATE}"
-LABEL org.label-schema.vcs-ref        = "${VCS_REF}"
+LABEL org.label-schema.schema-version         '1.0'
+LABEL org.label-schema.name                   'pokemonsay'
+LABEL org.label-schema.version                '1.0'
+LABEL org.label-schema.description            'Pokemonsay is is like "cowsay" but for pokémon.'
+LABEL org.label-schema.vcs-url                'https://github.com/otherguy/docker-pokemonsay'
+LABEL org.label-schema.version                '${VERSION}'
+LABEL org.label-schema.build-date             '${BUILD_DATE}'
+LABEL org.label-schema.vcs-ref                '${VCS_REF}'
 
-LABEL io.whalebrew.name                       = 'pokemonsay'
-LABEL io.whalebrew.config.environment         = '["TERM"]'
-LABEL io.whalebrew.config.keep_container_user = 'false'
+# Maintainer
+LABEL maintainer                              'otherguy <hi@otherguy.io>'
 
-ENTRYPOINT ["/usr/games/pokemonsay"]
+# Whalebrew
+LABEL io.whalebrew.name                       'pokemonsay'
+LABEL io.whalebrew.config.keep_container_user 'true'
+
+ENTRYPOINT ["/root/bin/pokemonsay"]
