@@ -19,12 +19,19 @@ _This repository provides the [`otherguy/pokemonsay`][dockerhub] image_
 
 ![You should try pokemonsay!](pokemonsay.png)
 
-## What is this?
+## 🌈 What is this?
 
-[`pokemonsay`](https://github.com/possatti/pokemonsay) is like [`cowsay`][cowsay] but for Pokémon only, written by [Lucas Possatti](https://github.com/possatti/).
+[`pokemonsay`](https://github.com/possatti/pokemonsay) is like [`cowsay`][https://en.wikipedia.org/wiki/Cowsay] but for Pokémon only, written by [Lucas Possatti](https://github.com/possatti/).
 
 This Docker image intends to bring the awesomeness of [`pokemonsay`](https://github.com/possatti/pokemonsay) to Docker and especially [whalebrew](https://github.com/whalebrew/whalebrew).
 
-## Notice
+## 🚧 Contributing
+
+Bug reports and pull requests are welcome on GitHub at [`otherguy/docker-pokemonsay`](https://github.com/otherguy/docker-pokemonsay).
+
+## ♥️ Acknowledgements
+
+- [Lucas Possatti](https://github.com/possatti/) for creating
+## 📝 Legal
 
 All Pokémon rights are property of [The Pokémon Company](https://en.wikipedia.org/wiki/The_Pok%C3%A9mon_Company). This is a  fan project with no ties to The Pokémon Company.
