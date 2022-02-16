@@ -1,4 +1,4 @@
-FROM perl:5.28-slim
+FROM perl:5.34-slim
 
 # Required to prevent warnings
 ARG DEBIAN_FRONTEND=noninteractive
